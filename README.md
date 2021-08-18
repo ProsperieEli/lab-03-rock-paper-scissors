@@ -9,3 +9,17 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+
+
+## HTML
+1) 3 radio buttons(one for rock, paper, scissors)
+1.5) 2 buttons
+    -one for submitting
+    -one for resetting
+2) 5 divs
+    -one for displaying results
+    -one for displaying wins
+    -one for displaying loses
+    -one for displaying total
+    -one for displaying percent
+
