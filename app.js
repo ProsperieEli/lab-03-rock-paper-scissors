@@ -1,7 +1,5 @@
 // import functions and grab DOM elements
-import { didUserWin, getRandomThrow } from "./get-random-throw.js"
-
-
+import { didUserWin, getRandomThrow } from "./get-random-throw.js";
 
 const myButton = document.querySelector('#submit');
 const myReset = document.querySelector('#reset');
@@ -21,7 +19,7 @@ let loses = 0;
   // update DOM to reflect the new state
 
   myButton.addEventListener('click', () => {
-    didUserWin;
-    getRandomThrow;
-    console.log(getRandomThrow());
+    didUserWin();
+    getRandomThrow();
+    
   })
