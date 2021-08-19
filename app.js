@@ -2,7 +2,6 @@
 import { didUserWin, getRandomThrow } from "./get-random-throw.js";
 
 const myButton = document.querySelector('#submit');
-const myReset = document.querySelector('#reset');
 const myResultsEl = document.querySelector('#results');
 const myWinsEl = document.querySelector('#wins');
 const myDrawEl = document.querySelector('#draws');
@@ -38,5 +37,6 @@ let draw = 0;
     myLosesEl.textContent = `Loses!: ${loses}`;
     myDrawEl.textContent = `Draws!: ${draw}`;
   })
+  
 
  
