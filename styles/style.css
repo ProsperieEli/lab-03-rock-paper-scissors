@@ -1,11 +1,5 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
 
     --color1: hrgb(10, 160, 90)
     --color2: hsla(135, 65%, 98%, 1);
@@ -31,14 +25,18 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    
 }
+
+
 
 section {
     background-color: var(--color5);
     width: 1000px;
     max-width: 80%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /*grid-template-columns: auto auto auto; */
     justify-content: center;
     align-items: center;
     padding-top: var(--gutter);
@@ -112,14 +110,47 @@ footer {
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
-
   }
+
   img{
       width: 150px;
   }
+
   input{
       display: none;
   }
   input:checked + img{
   border: solid 5px blue;
+  }
+
+  label{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .total{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }

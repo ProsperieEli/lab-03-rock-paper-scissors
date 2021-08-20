@@ -26,7 +26,7 @@ let draw = 0;
       wins++;
       myResultsEl.textContent = 'You Win!';
     } else if( winning === 'You lose!'){
-      loses--;
+      loses++;
       myResultsEl.textContent = 'You Lose!';
     } else {
       draw ++;
